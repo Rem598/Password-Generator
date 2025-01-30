@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e4e4fa;
+}
+.container {
+    background: #e4e4fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+input, button, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #1e0644;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0e3510;
+}
+.strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.strength-bar {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.strength-bar span {
+    display: block;
+    height: 100%;
+    transition: width 0.3s;
+}
+.strength-bar span.weak {
+    background: red;
+}
+.strength-bar span.medium {
+    background: orange;
+}
+.strength-bar span.strong {
+    background: green;
+}
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.password-options label {
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.password-preview {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-break: break-word;
+}

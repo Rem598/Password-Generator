@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <label for="length">Password Length:</label>
+        <input type="range" id="length" min="8" max="32" value="16" oninput="updateLengthDisplay(this.value)">
+        <div id="length-display">Length: 16</div>
+
+        <div class="password-options">
+            <label><input type="checkbox" id="include-lowercase" checked> Lowercase</label>
+            <label><input type="checkbox" id="include-uppercase" checked> Uppercase</label>
+            <label><input type="checkbox" id="include-numbers" checked> Numbers</label>
+            <label><input type="checkbox" id="include-symbols" checked> Symbols</label>
+        </div>
+
+        <button id="generate">Generate Password</button>
+
+        <div class="password-preview" id="generated-password">Your password will appear here</div>
+
+        <div class="strength">
+            <span>Strength:</span>
+            <div class="strength-bar">
+                <span id="strength-indicator" class="weak" style="width: 0;"></span>
+            </div>
+        </div>
+
+        <button id="copy">Copy to Clipboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
