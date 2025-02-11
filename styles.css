@@ -28,14 +28,14 @@ input, button, select {
     border-radius: 5px;
 }
 button {
-    background-color: #1e0644;
+    background-color: #441a06;
     color: white;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
 }
 button:hover {
-    background-color: #0e3510;
+    background-color: #6c966e;
 }
 .strength {
     display: flex;
